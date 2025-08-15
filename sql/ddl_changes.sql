@@ -40,3 +40,7 @@ CREATE TABLE book_transaction (
     last_modified timestamp with time zone NOT NULL DEFAULT NOW(),
     last_modified_by varchar(100) NOT NULL DEFAULT ''
 );
+
+--------------------------------------------------------------------
+ALTER TABLE book_transaction
+ALTER COLUMN return_on DROP NOT NULL;
